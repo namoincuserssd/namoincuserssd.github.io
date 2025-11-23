@@ -1,69 +1,67 @@
-/* assets/style.css */
-
+/* Global */
 body {
   margin: 0;
-  padding: 40px;
-  background: #000;
-  color: #0f0;
-  font-family: "Courier New", monospace;
-  font-size: 18px;
+  padding: 0;
+  background-color: #0f0f0f;
+  font-family: -apple-system, BlinkMacSystemFont, "SF Pro", "Inter", sans-serif;
+  color: #e6e6e6;
 }
 
-.container {
-  max-width: 480px;
-  margin: auto;
+h1, h2, h3 {
+  text-align: center;
+  margin-top: 20px;
+  font-weight: 600;
+}
+
+/* Container like homepage sections */
+.panel {
+  background: #151515;
+  margin: 30px auto;
   padding: 20px;
+  width: 90%;
+  max-width: 600px;
+  border-radius: 12px;
+  border-left: 4px solid #24d48a; /* green accent like your site */
 }
 
-h1 {
-  font-size: 28px;
-  margin-bottom: 20px;
-  border-left: 3px solid #0f0;
-  padding-left: 10px;
-}
-
-label {
-  display: block;
-  margin: 14px 0 6px;
-}
-
+/* Inputs */
 input {
   width: 100%;
-  padding: 12px;
-  background: #111;
-  border: 1px solid #0f0;
-  color: #0f0;
-  font-family: inherit;
-  font-size: 18px;
+  padding: 14px;
+  margin: 12px 0;
+  border-radius: 8px;
+  border: none;
+  background: #1c1c1c;
+  color: white;
+  font-size: 16px;
+  outline: none;
 }
 
+/* Button */
 button {
-  margin-top: 20px;
-  padding: 12px;
   width: 100%;
-  background: #0f0;
-  color: #000;
+  padding: 14px;
+  background: #24d48a;
   border: none;
-  font-size: 18px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
   cursor: pointer;
-  font-family: inherit;
+  margin-top: 15px;
 }
 
 button:hover {
-  background: #5f5;
+  opacity: 0.85;
 }
 
-a {
-  color: #0f0;
+/* Small link */
+.small-link {
+  text-align: center;
+  margin-top: 12px;
+  display: block;
+  color: #24d48a;
+  text-decoration: none;
+}
+.small-link:hover {
   text-decoration: underline;
-}
-
-.error {
-  color: #f33;
-  margin-top: 12px;
-}
-
-.success {
-  color: #3f3;
-  margin-top: 12px;
 }
