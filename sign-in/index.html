@@ -2,7 +2,7 @@
 <html>
 <head>
   <meta charset="UTF-8">
-  <title>Sign Up — Namo Inc.</title>
+  <title>Sign In — Namo Inc.</title>
   <link rel="stylesheet" href="/assets/style.css">
   <script type="module" src="/assets/script.js"></script>
 </head>
@@ -10,24 +10,24 @@
 <body>
 
 <h1>Namo Incorporated</h1>
-<h2>Create Account</h2>
+<h2>Sign In</h2>
 
 <div class="panel">
   <input id="email" type="email" placeholder="Email">
   <input id="password" type="password" placeholder="Password">
 
-  <button id="signup">Create Account</button>
+  <button id="signin">Sign In</button>
 
-  <a href="/sign-in/" class="small-link">Already have an account?</a>
+  <a href="/sign-up/" class="small-link">Create an account</a>
 </div>
 
 <script type="module">
-  import { signUp } from "/assets/script.js";
+  import { signIn } from "/assets/script.js";
 
-  document.getElementById("signup").onclick = () => {
+  document.getElementById("signin").onclick = () => {
     const email = email.value;
     const password = password.value;
-    signUp(email, password);
+    signIn(email, password);
   };
 </script>
 
